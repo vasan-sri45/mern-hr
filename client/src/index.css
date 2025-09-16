@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-regal-blue: #fff3e5; 
+}
+
+ /* globals.css */
+html {
+  scroll-behavior: smooth; 
+}
