@@ -1,7 +1,7 @@
 // controllers/messageController.js
 import mongoose from 'mongoose';
 import Message from '../models/messageModel.js';
-import MessageReadStatus from '../models/messageReadStatusModel.js';
+import MessageReadStatus from '../models/MessageReadStatusModel.js';
 
 // Create
 export const createMessage = async (req, res) => {
