@@ -1,8 +1,9 @@
 import { useState, useMemo, useCallback } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Plus, Menu, X } from 'lucide-react';
+import { Plus, Menu, X, ChevronRight} from 'lucide-react';
 import { selectCurrentUser } from '../../../store/slices/authSlice';
 import { useSelector } from 'react-redux';
+
 
 const TABS_CONFIG = [
   { id: 'assigned', label: 'Assigned', path: '/task', is_admin_only: false },
@@ -45,7 +46,7 @@ const TaskTabs = ({ onAssignedTabClick, searchQuery, onSearchChange }) => {
             className="p-2 sm:hidden rounded-md hover:bg-gray-100"
             aria-label="Open navigation menu"
           >
-            <Menu className="h-6 w-6 text-gray-700" />
+            <ChevronRight className="h-6 w-6 text-gray-700" />
           </button>
 
           <div className="hidden sm:flex overflow-x-auto gap-2 sm:gap-4">
