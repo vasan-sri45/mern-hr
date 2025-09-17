@@ -8,7 +8,7 @@ const TABS_CONFIG = [
   { id: 'assigned', label: 'Assigned', path: '/task', is_admin_only: false },
   { id: 'approved', label: 'Approved', path: '/task/approved', is_admin_only: false },
   { id: 'rework',   label: 'Rework',   path: '/task/rework', is_admin_only: false },
-  { id: 'status',   label: 'Status',   path: '/task/status', is_admin_only: true },
+  // { id: 'status',   label: 'Status',   path: '/task/status', is_admin_only: true },
 ];
 
 const ROLES = { ADMIN: 'admin', EMPLOYEE: 'employee' };
