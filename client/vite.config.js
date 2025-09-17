@@ -8,7 +8,7 @@ export default defineConfig({
     proxy: {
       // proxy all API calls to onrender (HTTPS)
       '/api': {
-        target: 'https://port-backend-4-3f84.onrender.com',
+        target: 'https://mern-hr-backend.onrender.com',
         changeOrigin: true,
         secure: true,
       }
