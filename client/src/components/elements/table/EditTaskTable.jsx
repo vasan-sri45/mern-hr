@@ -64,8 +64,19 @@ const EditTaskTable = ({ task, onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-      <div className="bg-white rounded-lg shadow-xl w-full max-w-lg p-6 relative">
+    // <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+    //   <div className="bg-white rounded-lg shadow-xl w-full max-w-lg p-6 relative">
+    <div
+  className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50"
+  aria-hidden="false"
+>
+  <div
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="edit-task-title"
+    aria-describedby="edit-task-desc"
+    className="bg-white rounded-lg shadow-2xl ring-1 ring-black/5 w-full max-w-lg p-6 relative"
+  >
         <button
           onClick={onClose}
           className="absolute top-4 right-4 text-slate-400 hover:text-slate-800"
