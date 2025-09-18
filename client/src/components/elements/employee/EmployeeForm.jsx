@@ -36,6 +36,7 @@ const FormField = ({ id, label, value, readOnly, onChange, type = 'text', placeh
 const EmployeeForm = () => {
   const dispatch = useDispatch();
   const { status, error, data } = useSelector((state) => state.personalInfo);
+  const errorText = typeof error === 'string' ? error : error?.message ?? JSON.stringify(error);
 
   // 'view' | 'edit' | 'create'
   const [formMode, setFormMode] = useState('view');
@@ -188,7 +189,7 @@ const EmployeeForm = () => {
           )}
 
           {status === 'failed' && error && (
-            <p className="text-red-600 mt-4 text-center">{error}</p>
+            <p className="text-red-600 mt-4 text-center">{errorText}</p>
           )}
         </form>
       </div>
